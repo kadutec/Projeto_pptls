@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, papel, tesoura, lagarto, spock</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="principal">
+        <h1 id="titulo">Pedra, papel, tesoura, lagarto, spock</h1>
+
+        <div id="placar">
+            <div id="jogador">
+                <h2 id="jogador-nome"></h2>
+                <span id="jogador-pontos">0</span>
+                <ul id="lista-1">
+                    <li><a id="jogador-escolha-1"><img src="/imagens/PPTLS/pedra.png" alt="imagem de pedra com as mãos"></a></li>
+                    <li><a id="jogador-escolha-2"><img src="/imagens/PPTLS/papel.png" alt="imagem de papel com as mãos"></a></li>
+                    <li><a id="jogador-escolha-3"><img src="/imagens/PPTLS/tesoura.png" alt="imagem de tesoura com as mãos"></a></li>
+                    <li><a id="jogador-escolha-4"><img src="/imagens/PPTLS/largato.png" alt="imagem de lagarto com as mãos"></a></li>
+                    <li><a id="jogador-escolha-5"><img src="/imagens/PPTLS/spock.png" alt="imagem de spock com as mãos"></a></li>
+                </ul>
+            </div>
+
+            <div id="versus">
+                VS
+            </div>
+
+            <div id="computador">
+                <h2 id="computador-nome">Computador</h2>
+                <span id="computador-pontos">0</span>
+                <ul id="lista-2">
+                    <li><a id="computador-escolha-1"><img src="/imagens/PPTLS/pedra.png" alt="imagem de pedra com as mãos"></a></li>
+                    <li><a id="computador-escolha-2"><img src="/imagens/PPTLS/papel.png" alt="imagem de papel com as mãos"></a></li>
+                    <li><a id="computador-escolha-3"><img src="/imagens/PPTLS/tesoura.png" alt="imagem de tesoura com as mãos"></a></li>
+                    <li><a id="computador-escolha-4"><img src="/imagens/PPTLS/largato.png" alt="imagem de lagarto com as mãos"></a></li>
+                    <li><a id="computador-escolha-5"><img src="/imagens/PPTLS/spock.png" alt="imagem de spock com as mãos"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="mensagem"></div>
+    </div>
+    <div id="modal">
+        <button id="regras-jogo"> Regras do jogo </button>
+        <dialog>
+            <button id="botao-fechar">Ok</button>
+            <h2></h2>
+            <p>
+                Pedra, papel, tesoura, lagarto e Spock é um jogo de escolha múltipla que expande o clássico jogo "Pedra, papel e tesoura" adicionando duas novas opções: "lagarto" e "Spock". O jogo foi popularizado pela série de televisão americana "The Big Bang Theory".
+
+                As regras básicas do jogo são as mesmas que as do "Pedra, papel e tesoura", mas com duas novas opções que tornam o jogo mais estratégico. Cada jogador escolhe uma das cinco opções simultaneamente e as jogadas são comparadas para determinar o vencedor. <br/>
+                <br/>
+                Pedra: vence tesoura e lagarto; é vencida por papel e Spock.<br/>
+                Papel: vence pedra e Spock; é vencido por tesoura e lagarto.<br/>
+                Tesoura: vence papel e lagarto; é vencida por pedra e Spock.<br/>
+                Lagarto: vence papel e Spock; é vencido por pedra e tesoura.<br/>
+                Spock: vence tesoura e pedra; é vencido por papel e lagarto.<br/>
+                <br/>
+                O objetivo do jogo é vencer o adversário escolhendo a opção que vence a opção escolhida pelo adversário. O jogo pode ser jogado em uma melhor de três, cinco ou sete jogadas, ou em qualquer número pré-determinado de jogadas acordado pelos jogadores.
+
+                Além de tornar o jogo mais estratégico, a adição das opções "lagarto" e "Spock" também torna o jogo mais divertido e imprevisível. É um jogo que pode ser jogado por pessoas de todas as idades e níveis de habilidade, tornando-o um clássico atemporal.
+            </p>
+        </dialog>
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>

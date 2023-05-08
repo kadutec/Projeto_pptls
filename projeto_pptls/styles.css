@@ -1,0 +1,151 @@
+* {
+    font-family: Helvetica , sans-serif, Arial;
+    font-weight: 400;
+    cursor: default;
+    box-sizing: 0;
+}
+
+body {
+    background-image: url('/imagens/PPTLS/pexels-philippe-donn-1169754.jpg');
+    background-size: 100%;
+}
+
+#titulo {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px rgb(89, 0, 105), -3px 3px 3px rgb(89, 0, 105), 3px -3px 3px
+     rgb(89, 0, 105), -3px -3px 3px rgb(89, 0, 105);
+}
+
+#mensagem {
+    background-color: #2d3436;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 20px;
+    color: white;
+}
+
+#placar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#jogador , #computador {
+    flex-grow: 1;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+}
+
+#jogador-nome, #computador-nome {
+    font-weight: bold;
+}
+
+#jogador h2, #computador h2 {
+    margin: 0;
+    padding: 0;
+}
+
+#jogador {
+    background: transparent;
+    background-color: rgba(0, 128, 255, 0.3);
+}
+
+#jogador-pontos {
+    right: 20px;
+}
+
+#jogador-pontos, #computador-pontos{
+    font-size: 52px;
+    position: absolute;
+    top: 8px;
+}
+
+#computador-nome {
+    text-align: right;
+}
+
+#jogador #lista-1, #computador #lista-2{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 60px 0 50px 0;
+}
+
+
+#jogador #lista-1 li, #computador #lista-2 li {
+    display: inline;
+    padding: 0 10px;
+}
+
+#jogador #lista-1 a, #computador #lista-2 a {
+    opacity: .3;
+    transition: 0.3s;
+}
+
+#jogador #lista-1 a:hover, #computador #lista-2 a:hover,
+#jogador #lista-1 a.selecionado, #computador #lista-2 a.selecionado {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+#jogador #lista-1 img, #computador #lista-2 img {
+    max-width: 100px;
+}
+
+
+#versus {
+    font-size: 60px;
+    padding: 0 30px;
+    color: #fff;
+    font-size: bold;
+    text-shadow: 3px 3px 3px rgb(89, 0, 105), -3px 3px 3px rgb(89, 0, 105), 3px -3px 3px
+     rgb(89, 0, 105), -3px -3px 3px rgb(89, 0, 105);
+}
+
+#computador {
+    background: transparent;
+    background-color: rgba(242, 255, 0, 0.3);
+}
+
+#modal {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+#botao-fechar {
+    position: relative;
+    left: 95%;
+    padding: 5px 7px;
+    font-size: 12pt;
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0  / .5);
+}
+
+dialog {
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 0 1rem rgb(0 0 0  / .3);
+    width: 60%;
+    font-size: 15pt;
+}
+
+#regras-jogo {
+    border: none;
+    border-radius: 5px;
+    padding: 15px 15px;
+    background-color: rgb(156, 117, 189);
+    font-weight: 500;
+    font-size: 15pt;
+    color: white;
+}
+
